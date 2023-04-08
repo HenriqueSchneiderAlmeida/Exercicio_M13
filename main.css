@@ -1,0 +1,286 @@
+body {
+    background-color:  #0d6dfe
+
+}
+
+#cabecalho {
+    background-color: #0d6dfe;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 120;
+}
+
+header {
+    margin-bottom: 0px;
+}
+
+.carousel-item > img {
+    height: 230px;
+}
+
+.card {
+    margin-top: 12px;
+}
+
+.card > img {
+    height: 200px;
+}
+
+.card-img-overlay {
+    background-color: rgba(0,0,0,0.35);
+}
+
+.img-card {
+    width: 100%;
+}
+
+.tam-card-img {
+    height: 219.5px;    
+}
+
+.tam-card {
+    height: 450px;
+}
+
+.div-e, .div-d {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    background-color: #0d6dfe; 
+}
+
+.h2-sugestao{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    text-align: center; 
+}
+
+.sec-grande {
+    height: 90vh;
+}
+
+.txt-azul {
+    color: #0d6dfe
+}
+
+section {
+    padding-top: 300px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+label {
+    margin-top: 30px;
+}
+
+.btn-contato {
+    margin-top: 28px;
+    min-width: 55%;
+    max-width: 55%;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+input {
+    min-width: 55%;
+    max-width: 55%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%
+    }
+
+    section {
+        padding-top: 165px;
+    }
+
+    .h2 {
+        font-size: 12px;
+    }
+
+    .carousel-caption > h2 {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+    }
+
+    .navbar {
+        padding: 3px;
+        margin: 0px;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px;
+    }
+
+    .h4 {
+        margin: 0px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .carousel-item > img {
+        height: 120px;
+    }
+
+    #btn-grande {
+        display: none;
+    }
+
+    .container > .row > .col-4 {
+        width: 100%;
+    }
+
+    .card-body > p {
+        font-size: 12px;
+    }
+
+    .card-body > h4 {
+        font-size: 15px;
+    }
+
+    .card-body > h5 {
+        font-size: 13px;
+    }
+
+    .card-img-overlay {
+        padding: 0;
+        padding-left: 5px;
+    }
+
+    .card-footer {
+        font-size: 15px;
+    }
+
+    #leia-gr {
+        display: none;
+    }
+
+    #val-leia-gr {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 94%
+    }
+
+    section {
+        padding-top: 225px;
+    }
+
+    .h2 {
+        font-size: 18px;
+    }
+
+    .carousel-item > img {
+        height: 170px;
+    }
+
+    .container > .row > .col-4 {
+        width: 50%;
+    }
+    
+    .card-body > h5 {
+        font-size: 14px;
+    }
+
+    .card-body > h4 {
+        font-size: 14px;
+    }
+
+    .card-img-overlay {
+        padding: 0;
+        padding-left: 5px;
+    }
+
+    #btn-pequeno {
+        display: none;
+    }
+    
+    #btn-grande {
+        text-align: center;
+    }
+
+    #leia-pq {
+        display: none;
+    }
+    
+    #val-leia-pq {
+        display: none;
+    }
+
+    .h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    #btn-pequeno {
+        display: none;
+    }
+
+    #btn-grande {
+        text-align: center;
+    }
+
+    .card-body > h5 {
+        font-size: 14px;
+    }
+
+    .card-body > h4 {
+        font-size: 14px;
+    }
+
+    .card-img-overlay {
+        padding: 0;
+        padding-left: 5px;
+    }
+
+    #leia-gr {
+        display: none;
+    }
+    
+    #val-leia-gr {
+        display: none;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+    #btn-pequeno {
+        display: none;
+    }
+
+    #btn-grande {
+        text-align: center;
+    }
+
+    #leia-pq {
+        display: none;
+    }
+    
+    #val-leia-pq {
+        display: none;
+    }   
+}

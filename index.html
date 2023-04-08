@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Avançado</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="cabecalho" class="row">
+<div class="col-4 div-e">
+        <p class="h2">O melhor destino do Brasil, venha desfrutar destas maravilhas que Deus criou.</p>
+    </div>
+    <div class="col-4">
+        <div id="carousel-id" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/04/03/02/28/rio-1303951_960_720.jpg">
+                    <div class="carousel-caption">
+                        <h2>Corcovado</h2>
+                    </div>
+                </div>                    
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/01/08/19/30/rio-de-janeiro-1963744_960_720.jpg">
+                    <div class="carousel-caption">
+                        <h2>Baia da Guanabara</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2013/04/02/13/06/beach-99388_960_720.jpg">
+                        <div class="carousel-caption">
+                            <h2>Belas Praias</h2>
+                        </div>
+                </div>                
+                <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/09/18/23/23/sugarloaf-mountain-1679285_960_720.jpg">
+                        <div class="carousel-caption">
+                            <h2>Bondinho</h2>
+                        </div>
+                </div>                
+                <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2014/02/22/14/16/rio-de-janeiro-272052_960_720.jpg">
+                        <div class="carousel-caption">
+                            <h2>Arcos da Lapa</h2>
+                        </div>
+                </div>
+            </div>        
+            <button data-bs-target="#carousel-id" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-id" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-id" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="4"></button>
+            </div>
+        </div>        
+    </div>   
+    <div class="col-4 div-d">
+            <span><p class="h2">Pacotes acima de 4 dias em até 10x no cartão.</p>
+            <button id="btn-grande" class="btn btn-secondary btn-md" data-bs-toggle="modal" data-bs-target="#saiba">
+                Saiba mais
+            </button>
+            <button id="btn-pequeno" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#saiba">
+                Saiba
+            </button></span>
+    </div>
+    <div class="navbar navbar-expand-lg alert alert-primary">
+        <div class="container">
+            <h1 class="h4 txt-azul">Escolha o que mais lhe agrada com a Henrique Tour</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#passeio">Passeios</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#combos">Combos</a>
+                    </li>                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contatos</a>
+                    </li>
+                </ul> 
+            </nav>
+        </div>
+    </div>
+</div>
+    <div class="modal" id="saiba">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Valores x Parcelas</h5>
+                        <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Apenas para cartões Visa ou MasterCard <br>
+                            Parcelas minimas de R$ 250,00 por parcela. <br>
+                            Até 5 (cinco) parcelas sem juros. <br>
+                            De 6 (seis) à 10 (dez) parcelas, juros de 3,59% mês.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mais opções</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+<div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <section id="passeio">
+        <div class="container">
+            <div class="row" >
+                <div class="col h2-sugestao">
+                    <h2>Sugestões de Passeio</h2>
+                </div>        
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card tam-card">
+                        <div class="card-header">
+                            Passeio Imperdível
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2016/09/18/23/23/sugarloaf-mountain-1679285_1280.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Bonde do Pão de Açucar</h4>
+                            <h5 class="card-subtitle">Translado + Bilhete de embarque</h5>
+                            <p class="cart-text">
+                                Um passeio inesquessível. Vista inegualável do Rio de Janeiro. Você no bondinho mais famoso no mundo!
+                            </p>
+                            <a href="#" class="btn btn-primary">R$ 250,00 por pessoa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card tam-card">
+                        <div class="card-header">
+                            Adrenalina
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2016/06/04/21/52/nature-1436292_960_720.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Pedra da Gávea</h4>
+                            <h5 class="card-subtitle">Altitude de 772m</h5>
+                            <p class="cart-text">
+                                EcoTurismo na cidade maravilhosa. Trilha, mata atlantica, fauna e flora tudo em um ínico passeio.
+                            </p>
+                            <a href="#" class="btn btn-primary">R$ 175,00 por pessoa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card tam-card">
+                        <div class="card-header">
+                            Praia de Ipanema
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2020/01/31/21/27/brazil-4809021_960_720.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">A queridinha do Rio</h4>
+                            <h5 class="card-subtitle">Visita + Almoço</h5>
+                            <p class="cart-text">
+                                Visite uma das mais fomosa praias do Brasil. Almoço executivo, 8 opções no cardápio, sem 3 pratos com peixe.
+                            </p>
+                            <a href="#" class="btn btn-primary">R$ 135,00 por pessoa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark tam-card">
+                        <div class="card-header">
+                            Passeio em alto mar
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2015/02/16/15/10/motor-yacht-638390_960_720.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Iaty Powerboat Baviera</h4>
+                            <h5 class="card-subtitle">Luxo e Glamour</h5>
+                            <p class="cart-text">
+                                Melhor passeio de iate do Rio de Janeiro. Cinco horas no total. Copacabana, Ipanema, Neblon, Barra, Recreio e muito mais...
+                            </p>
+                            <a href="#" class="btn btn-primary">R$ 600,00 por pessoa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-bg-dark tam-card-img">
+                        <!-- div sem cabeçalho -->
+                        <img class="img-card" src="https://cdn.pixabay.com/photo/2020/01/31/21/30/brazil-4809039_960_720.jpg">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Maracanã</h4>
+                            <h5 class="card-subtitle">O maior estádio do Brasil</h5>
+                            <p class="cart-text">
+                                Estádio do Maracanã, durante o passeio visita as arquibancadas e também para o gramado com 15 min. de bola rolando.
+                            </p>
+                            <a href="#" class="btn btn-primary">R$ 75,00 por pessoa</a>
+                        </div>
+                    </div>
+                    <div class="card text-bg-dark tam-card-img">
+                        <!-- div sem cabeçalho -->
+                        <img class="img-card" src="https://cdn.pixabay.com/photo/2017/05/16/22/11/rio-de-janeiro-vacation-2319223_960_720.jpg">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title h5">Museo do Amanhã + Translado</h4>
+                            <h5 class="card-subtitle">Almoço opcional por R$60,00</h5>
+                            <p class="cart-text">
+                                Com arquitetura moderna e obras de arte para todos os lados, um passeio cultural como poucos.
+                            </p>
+                            <a href="#" class="btn btn-primary">R$ 100,00 por pessoa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card tam-card">
+                        <header class="card-header">
+                            Barra da Tijuca
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2017/09/21/21/07/beach-2773561_960_720.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Para muitos a melhor praia</h4>
+                            <p class="cart-text">
+                                A praia mais segura do Rio de Janeiro segundo matéria da revista Trip.
+                            </p>
+                            <a id="leia-pq" href="#" class="btn btn-primary btn-sm">Leia mais</a>
+                            <a id="val-leia-pq" href="#" class="btn btn-primary btn-sm">R$ 55,00 por pessoa</a>
+                            <a id="leia-gr" href="#" class="btn btn-primary">Leia mais</a>
+                            <a id="val-leia-gr" href="#" class="btn btn-primary">R$ 55,00 por pessoa</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>04/04/2023 às 21:30:00 hs</time>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-grande" id="combos"><h1>Combos</h1></section>    
+    <section class="sec-grande" id="contato"><h2 class="display-4">Entre em contato</h2>
+        <div class="row">
+            <div class="col">                
+                <form>
+                    <label class="form-label" for="name">Seu nome:</label>
+                    <input class="form-control" type="text" id="nome">
+                    <label class="form-label" for="cidade">Sua cidade:</label>
+                    <input class="form-control" type="text" id="cidade">
+                    <label for="email" class="form-label">Seu e-mail:</label>
+                    <input id="email" type="email" class="form-control">
+                    <label for="telefone" class="form-label">Telefone:</label>
+                    <input id="telefone" type="tel" class="form-control">
+                    <div class="col d-flex">
+                        <button class="btn btn-secondary btn-md btn-contato">
+                            Enviar dados                             
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> 
+</div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
